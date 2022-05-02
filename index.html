@@ -1,0 +1,47 @@
+<!-- <?php require_once 'listarObjetosControl.php' ?> -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC INVENTORY</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       <h1><span>BC</span>INVENTORY</h1>
+    </header>
+    <main>
+        <section id="data">
+            <div id="find">
+                <input type="text" id="code_input" placeholder="Ingrese el código a consultar" autofocus autocomplete="off">
+                <img id="find_icon" src="./search_icon.svg" alt="icono de lupa">
+            </div>
+            <p id="noFound"></p>
+            <form action="#">
+                <label for="tipo">Tipo</label>
+                <input type="text" id="tipo" disabled>
+                <label for="marca">Marca</label>
+                <input type="text" id="marca" disabled>
+                <label for="modelo">Modelo</label>
+                <input type="text" id="modelo" disabled>
+                <label for="serial">Serial</label>
+                <input type="text" id="serial" disabled>
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" disabled>
+                <label for="codigoBarras">Codigo de barras</label>
+                <input type="text" id="codigoBarras" disabled>
+            </form>
+        </section>
+    </main>
+    <footer>
+            <p>Diseñado y desarrollado por Ronald Rodríguez Campillo</p>
+            <p>Desarrollador web - Tecnólogo en Análisis y Desarrollo de Sistemas de Información</p>
+            <a href="https://ronaldweb.com" target="_blank">www.ronaldweb.com</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

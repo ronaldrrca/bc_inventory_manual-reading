@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 414px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    max-width: 1024px;
+}
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+    padding: 0 10px;
+    border-top: 2px solid #333;
+}
+
+footer p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+footer p:nth-child(2){
+    margin-bottom: 20px;
+}
+
+footer a{
+    color: blue;
+}
+
+h1{
+    font-size: 30px;
+    color: crimson;
+}
+
+h1 span{
+    color: darkcyan;
+}
+
+#data{
+    max-width: 400px;
+    padding: 20px 10px;
+    margin-top: 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+label, input[type='text']{
+    width: 100%;
+}
+
+label{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type='text']{
+    min-height: 28px;
+    padding: 5px;
+    margin-bottom: 15px;
+    background-color: #333;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#find{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#code_input{
+    margin: 0;
+    width: 300px;
+    background-color: crimson;
+    color: #ffffff;
+}
+
+#find_icon{
+    width: 30px;
+}
+
+#noFound{
+    width: 100%;
+    height: 14px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: red;
+}
+
+#code_input::placeholder{
+    color: #ffffff;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        width: 1024px;
+    }
+
+    main{
+        width: 1024px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #data{
+        margin: 0;
+    }
+}
+
