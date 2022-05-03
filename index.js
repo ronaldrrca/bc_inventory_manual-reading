@@ -6,6 +6,7 @@ const serial = document.getElementById("serial")
 const estado = document.getElementById("estado")
 const codigoBarras = document.getElementById("codigoBarras")
 const noFound = document.getElementById("noFound")
+const textbox = document.getElementById("code_input");
 
     //Consulta al servidor
     fetch('./listarObjetosControl.php')
@@ -46,3 +47,10 @@ const noFound = document.getElementById("noFound")
     })//Cierre del fetch
         
 
+
+//activando la tecla Enter para las búsquedas
+    textbox.addEventListener("keypress", function onEvent(event) {
+        if (event.key === "Enter") {
+            find_icon.click();
+        }
+    });
