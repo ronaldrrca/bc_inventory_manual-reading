@@ -29,6 +29,10 @@ const textbox = document.getElementById("code_input");
                         noFound.innerHTML = ""
                         match = true
                         break;
+                    case ""://En caso de que el input esté vacío
+                        noFound.innerHTML = ""
+                        match = true //En este punto match no es realmente TRUE, pero con esto evitamos que se ejecute la acción para cuando es FALSE
+                        break;
                    }
 
                    switch (match) {
@@ -46,11 +50,10 @@ const textbox = document.getElementById("code_input");
         })//Cierre del evento en find_icon
     })//Cierre del fetch
         
-
-
-//activando la tecla Enter para las búsquedas
-    textbox.addEventListener("keypress", function onEvent(event) {
-        if (event.key === "Enter") {
-            find_icon.click();
-        }
-    });
+    
+//Activando la tecla Enter para las búsquedas
+textbox.addEventListener("keypress", function onEvent(event) {
+    if (event.key === "Enter") {
+        find_icon.click();
+    }
+});
